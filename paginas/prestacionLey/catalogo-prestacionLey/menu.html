@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRUPO DINÁMICO</title>
+
+    <!-- ICONOS-->
+    <link rel = "stylesheet" href = "RECURSOS/css/all.min.css">
+    <!-- MATERIALIZE -->
+    <link rel = "stylesheet" href = "RECURSOS/materialize.min.css">
+    <!-- ESTILO -->
+    <link rel = "stylesheet" href = "menu.css">
+
+    <!-- MATERIALIZE JS -->
+    <script src = "RECURSOS/materialize.min.js" defer></script>
+    <!-- JS -->
+    <script src = "menu.js" defer></script>
+</head>
+<body>
+
+    <!--========================================================================== 
+                        ENCABEZADO DEL MODULO X
+    ============================================================================-->
+    <header>
+
+        <!--=======================================
+                DIV DE BOTONES
+        ===========================================-->
+        <div class = "div_botones_encabezado">
+            <!--_______________
+                BOTON MENU 
+            ___________________-->
+            <div id = "boton_menu" class = "boton_encabezado tooltipped">
+                <i class="fas fa-align-justify"></i>
+            </div>
+
+             <!--_______________
+                BOTON REGRESAR 
+            ___________________-->
+            <div id = "boton_regresar" class = "boton_encabezado tooltipped">
+                <i class="fas fa-undo"></i>
+            </div>
+
+
+            <!--________________________
+                BOTON AGREGAR ARTICULO 
+            ____________________________-->
+            <div id = "boton_add" class = "boton_encabezado tooltipped">
+                <i class="fas fa-vote-yea"></i>
+            </div>
+
+
+        </div>
+
+
+        <!--====================================
+            CONTENEDOR TEXTO Y LOGO
+        ========================================-->
+        <div class = "div_texto_encabezado">
+             <div>
+                <label id = "eti_empresa" class = "titulo_encabezado"> 
+                    CONSTRUCTORA 
+                </label>
+                <label id = "eti_pantalla" class = "subtitulo_encabezado"> 
+                    Catalogo de prestaciones de Ley
+                </label>
+            </div>
+
+            <!--==============
+                IMAGEN LOGO
+            ================-->
+            <img src = ".../imagenes/logo.webp">
+        </div>
+
+    </header>
+
+    <iframe id = "contenedor_principal" src = "catalogo-prestacionLey.php"></iframe>
+
+    <!-- ENLACES A OTRAS PAGINAS -->
+    <a id = "link_regresarAsignarPrestacionLey"  class = "a_enlace"  href = "../asignar-prestacionLey/menu.html">IR</a>
+
+    <!--========================================================================== 
+                        PANEL LATERAL MENU
+    ============================================================================-->
+    <ul id = "panel_menu" class = "sidenav">
+        <li>
+            <!--=============================== 
+                CONTENEDOR DESPLEGABLE MENU
+            ==================================-->
+            <ul id = "desplegable_menu"  class = "collapsible expandable">
+                
+                <!--======================= 
+                    DESPLEGABLE CUENTA
+                ===========================-->
+                <li class = "active">
+                    <div id = "desplegable_cuenta" class = "collapsible-header">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </div>
+                    <div class = "collapsible-body">
+                        
+                        <!-- IMAGEN DEL EMPLEADO -->
+                        <aside>
+                            <img id = "img_empleado"  class = "tooltipped" >
+                        </aside>
+
+                        <!-- BOTON CERRAR SESION -->
+                        <div id = "boton_salir"  class = "item_menu">
+                            <i class="fas power-off"></i>
+                            <label class = "texto_item_menu"> Cerrar Sesion </label>
+                        </div>
+
+                        <!-- BOTON MODULO OBRAS -->
+                        <div id = "boton_modulo_obras"  class = "item_menu">
+                            <i class="far fa-building"></i>
+                            <label class = "texto_item_menu"> Ir a Modulo Obras </label>
+                        </div>
+
+                        <!-- BOTON MODULO FINANZAS -->
+                        <div id = "boton_modulo_finanzas"  class = "item_menu">
+                            <i class="fas fa-money-check-alt"></i>
+                            <label class = "texto_item_menu"> Ir a Modulo Inventario </label>
+                        </div>
+
+                    </div>
+                </li> 
+
+
+                <!--======================= 
+                    DESPLEGABLE SECCIONES
+                ===========================-->
+                <li class = "active">
+                    <div class = "collapsible-header">
+                        <i class="fas fa-chevron-right"></i>
+                        Secciones
+                    </div>
+                    <div class = "collapsible-body itemB_menu">
+                        
+                        <!-- BOTON NOMINA -->
+                        <div id = "boton_nomina" class = "item_menu">
+                            <i class="fas fa-book"></i>
+                            <label class = "texto_item_menu"> Nómina </label>
+                        </div>
+
+                         <!-- BOTON REPORTE -->
+                         <div id = "boton_reporte" class = "item_menu">
+                            <i class="fas fa-book"></i>
+                            <label class = "texto_item_menu"> Generar reporte </label>
+                        </div>
+
+                        <!-- BOTON CATALOGO DE EMPLEADOS -->
+                        <div id = "boton_catalogo" class = "item_menu">
+                            <i class="fas fa-book"></i>
+                            <label class = "texto_item_menu"> Ver Catalogo de Empleados </label>
+                        </div>
+
+                        <!-- BOTON VER MANTENIMIENTOS -->
+                        <div id = "boton_mantenimientos" class = "item_menu">
+                            <i class="fas fa-tools"></i>
+                            <label class = "texto_item_menu"> Prestamos </label>
+                        </div>
+
+                        <!-- BOTON VIATICOS -->
+                        <div id = "boton_viaticos" class = "item_menu">
+                            <i class="fas fa-tools"></i>
+                            <label class = "texto_item_menu"> Viáticos </label>
+                        </div>
+
+                        <!-- BOTON PRESTACIONES -->
+                        <div id = "boton_prestaciones" class = "item_menu">
+                            <i class="fas fa-tools"></i>
+                            <label class = "texto_item_menu"> Prestaciones </label>
+                        </div>
+
+                        <!-- BOTON VER SEGUROS -->
+                        <div id = "boton_seguros" class = "item_menu">
+                            <i class="fas fa-user-shield"></i>
+                            <label class = "texto_item_menu"> Pago de Servicios </label>
+                        </div>
+
+                        <!-- BOTON VER NOTIFICACIONES -->
+                        <div id = "boton_notificaciones" class = "item_menu">
+                            <i class="fas fa-bell"></i>
+                            <label class = "texto_item_menu"> Ver Notificaciones </label>
+                        </div>
+
+                        <!-- BOTON AGREGAR ARTICULO -->
+                        <div id = "boton_agregar_articulo" class = "item_menu">
+                            <i class="fas fa-plus-circle"></i>
+                            <label class = "texto_item_menu"> Puestos de trabajo </label>
+                        </div>
+
+                        <!-- BOTON SOLICITUD DE TRANSFERENCIA -->
+                        <div id = "boton_solicitud" class = "item_menu">
+                            <i class="fas fa-file-medical"></i>
+                            <label class = "texto_item_menu"> Ver Solicitudes de pagos </label>
+                        </div>
+
+                    </div>
+                </li>
+
+            </ul>
+            
+        </li>
+    </ul>
+
+
+</body>
+</html>

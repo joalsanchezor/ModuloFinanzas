@@ -1,0 +1,306 @@
+/*=====================
+    DISEÑO DEL BODY
+=======================*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /*border: 1px solid black;*/
+}
+ 
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #dfdede;
+    overflow: auto;
+}
+
+
+
+/*=========================================================
+        DISEÑO DEL ENCABEZADO
+===========================================================*/
+header {
+    background: #212f7e;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    gap: 20px;  
+}
+
+.div_botones_encabezado{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+    position: relative;
+    overflow: hidden;
+    padding: 0px 5px;
+}
+
+.boton_encabezado {
+    color: #f1f1f1;
+    font-size: 33px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.boton_encabezado:hover {
+    transition: 0.5s;
+    color: #7abde9;
+    transform: scale( 1.15 , 1.15 );
+}
+
+.div_texto_encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-grow: 2;
+    gap: 15px;
+}
+
+.div_texto_encabezado>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-grow: 2;
+}
+
+.titulo_encabezado{
+    font-family: "Segoe UI" , sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #dfdede;
+}
+
+.subtitulo_encabezado {
+    font-family: "Segoe UI" , sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #abdafa;
+}
+
+header img {
+    background: #f1f1f1;
+    height: 50px; 
+}
+
+
+
+
+/*=========================================================
+        DISEÑO DEL PANEL MENU
+===========================================================*/
+.sidenav {
+    width: fit-content!important;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidenav li {
+    background: #f1f1f1;
+    display: grid;
+    place-items:  center;
+    width: 100%;
+    padding: 10px 0px;
+    height: 100vh;
+    overflow: auto;
+}
+
+#desplegable_menu {
+    background: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 0px 5px;
+}
+
+#desplegable_menu li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: fit-content;
+}
+
+#desplegable_menu .collapsible-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #217e96;
+    color: #f1f1f1;
+    transition: 0.2s;
+    font-family: "Segoe UI" , sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    height: fit-content;
+}
+
+#desplegable_menu .collapsible-header:hover {
+    color: #abdafa;
+    transition: 0.5s;
+}
+
+#desplegable_menu .collapsible-body {
+    width: 100%;
+    background: #ffffff;
+    padding: 12px 5px;
+}
+
+.itemB_menu {
+    position: relative;
+}
+/*______________________________________
+    DIV ITEM MENU QUE CONTIENE
+    AL ICONO Y EL TEXTO
+________________________________________*/
+.sidenav .item_menu {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    color: #212f7e;
+    font-size: 45px;
+    cursor: pointer;
+    transition: 0.15s;
+    padding: 6px 0px 6px 4px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.sidenav .item_menu:hover {
+    transition: 0.5s;
+    color: #7abde9;
+    background: #212f7e;
+}
+
+
+/*______________________________________
+    TEXTO DE UN ITEM MENU 
+________________________________________*/
+.texto_item_menu {
+    font-family: "Segoe UI" , sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #217e96;
+    text-align: center;
+    cursor: pointer;
+    flex-grow: 2;
+}
+
+.sidenav .item_menu:hover .texto_item_menu {
+    transition: 0.5s;
+    color: #dfdede;
+}
+
+
+/*______________________________________
+    CONTENEDOR DE LA IMAGEN DEL USUARIO CONECTADO
+________________________________________*/
+#panel_menu aside {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 0px 0px 10px 0px;
+}
+
+#panel_menu img {
+    width: 115px;
+    border-radius: 10px;
+    border: 3px solid #212f7e;
+}
+
+
+.material-tooltip {
+	background: #ee8686;
+    box-shadow: 0px 0px 9px 1px #ee8686;
+    max-width: 300px;
+}
+
+.material-tooltip label {
+    font-weight: 500;
+    font-size: 22px;
+    color: black;
+    display: block;
+    padding: 5px 0px;
+    line-height: 100%;
+}
+
+#contenedor_principal {
+    width: 100%;
+    flex-grow: 2;
+}
+
+/*-------------------FORMULARIO-------------*/
+.formulario-div{
+    background-image: url('../imagenes/fondo.png');
+    min-height: 80vh;
+    display: grid;
+    place-items: center;
+    padding: 30px;
+}
+
+.formulario-div form{
+    width: 400px;
+    min-height: 60vh;
+    background: #f4f4e1;
+    border: 5px solid white;
+    padding: 3%;
+    font-family: "Montserrat Alternates",serif;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 4px rgba(0, 0, 0 ,0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+input[type=text], input[type=password],input[type=number],
+textarea,select,input[type=file],input[type=date]{
+    font-family:"Montserrat Alternates",serif ;
+    font-size: 1rem;
+    margin: 1rem 0 1rem 0;
+}
+
+select {
+    font-size: 1.2rem;
+    font-family:"Montserrat Alternates",serif ;
+}
+
+.formulario-div h3{
+    text-align: center;
+    color: #42929d;
+    text-transform: uppercase;
+    border-bottom: 1px solid #42929d;
+    
+}
+
+/* TABLAS DE VISUALIZACIÓN DE DATOS */
+div.centraTabla{
+    text-align: center;
+}
+    
+div.centraTabla table {
+    margin: 0 auto;
+    text-align: left;
+}

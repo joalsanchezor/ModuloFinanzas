@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRUPO DINÁMICO</title>
+
+    <!-- ICONOS-->
+    <link rel = "stylesheet" href = "RECURSOS/css/all.min.css">
+
+    <!-- ESTILO -->
+    <link rel = "stylesheet" href = "verEmpleados.css">
+
+</head>
+<body>
+    <table id = "tablaEmpleado" class = "div_tabla">
+        <!-- CABEZERA DE COLUMNAS -->
+        <tr>
+            <td class = "columna div_columna_Nombre">Nombre del Empleado</td>
+            <td class = "columna div_columna_NumCuenta">Número Cuenta</td>
+            <td class = "columna div_columna_NumTarjeta">Número Tarjeta</td>
+            <td class = "columna div_columna_Direccion">Dirección</td>
+            <td class = "columna div_columna_Celular">Celular</td>
+            <td class = "columna div_columna_Sangre">Tipo Sangre</td>
+            <td class = "columna div_columna_NSS">NSS</td>
+            <td class = "columna div_columna_Puesto">Puesto</td>
+            <td class = "columna div_columna_Correo">Correo Electronico</td>
+        </tr>
+<!-- 
+    ALTER TABLE `empleado` 
+    ADD `correo` VARCHAR(100) NOT NULL AFTER `idPuesto`, 
+    ADD `contraseña` VARCHAR(100) NOT NULL AFTER `correo`;
+-->
+
+<!--
+    UPDATE `empleado` 
+    SET `correo` = 'mariaElena@hotmail.com', `contraseña` = 'mariaelena' 
+    WHERE `empleado`.`idEmpleado` = 14; 
+    
+    UPDATE `empleado` 
+    SET `correo` = 'jorge@gmail.com', `contraseña` = 'jorge' 
+    WHERE `empleado`.`idEmpleado` = 15; 
+    
+    UPDATE `empleado` 
+    SET `correo` = 'fernanda@hotmail.com', `contraseña` = 'fernanda' 
+    WHERE `empleado`.`idEmpleado` = 16; 
+    
+    UPDATE `empleado` 
+    SET `correo` = 'alfonso@hotmail.com', `contraseña` = 'alfonso' 
+    WHERE `empleado`.`idEmpleado` = 22; 
+    
+    UPDATE `empleado` 
+    SET `correo` = 'pedro@gmail.com', `contraseña` = 'pedro' 
+    WHERE `empleado`.`idEmpleado` = 23;
+-->
+
+        <!-- RENGLON
+        <tr class = "row">
+            <td>Alfonso Aldair Rangel Cantabrana</td>
+            <td>123456789</td>
+            <td>112233445566</td>
+            <td>#234</td>
+            <td>311-213-22-66</td>
+            <td>A+</td>
+            <td>12345566778899</td>
+            <td>Supervisor de Obra</td>
+            <td>correo1@hotmail.com</td>
+        </tr>
+    -->
+    </table>
+
+</body>
+</html>

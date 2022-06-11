@@ -1,0 +1,107 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+
+/* DISEÑO DE LA TABLA */
+.div_tabla {
+    width: 100%;
+    table-layout: auto;
+    padding: 10px 12px;
+    border: none;
+}
+
+/* DISEÑO DE CELDAS DEL ENCABEZADO */
+.columna {
+    background: rgb(39, 100, 102);
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    color: #ece9e9;
+    text-align: center;
+    padding: 8px 2px;
+    word-wrap: break-word;
+}
+
+/* DISEÑO DE UN RENGLON */
+.row {
+    background: #bdc3f8;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+/* DISEÑO DE LAS CELDAS DE UN RENGLON */
+.row td {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333232;
+    word-wrap: break-word;
+    background: transparent;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+.rowHover {
+    transition: 0.4s !important;
+    background: #303775 !important; 
+}
+
+.rowHover td{
+    color: #e0e0e0 !important;
+}
+
+.rowSeleccionado {
+    transition: 0.5s !important;
+    background: #108520 !important;  
+}
+
+.rowSeleccionado td{
+    color: #e0e0e0 !important;
+}
+
+
+
+
+
+/*=====================================
+    CONFIGURACION EL WIDTH MINIMO DE LAS COLUMNAS
+=========================================*/
+.div_columna_Nombre {
+    min-width: 300px;
+}
+
+.div_columna_NumCuenta
+{
+    min-width: 100px;
+}
+
+.div_columna_NumTarjeta {
+    min-width: 100px;
+}
+
+.div_columna_Direccion{
+    min-width: 250px;
+}
+
+.div_columna_Celular{
+    min-width: 150px;
+}
+
+.div_columna_Sangre{
+    min-width: 100px;
+}
+
+.div_columna_NSS{
+    min-width: 100px;
+}
+
+.div_columna_Puesto{
+    min-width: 150px;
+}
